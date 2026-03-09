@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Security](https://img.shields.io/badge/security-static--analysis-red)
 🛡️ DroidHunter
 
 DroidHunter is a professional Android APK static analysis framework designed to identify security vulnerabilities, misconfigurations, and potential threats in mobile applications.
@@ -59,8 +62,8 @@ Includes an educational vulnerability scanner to demonstrate Android security an
 
 📦 Installation
 Clone the Repository
-git clone https://github.com/yourusername/mobile-security-scanner.git
-cd mobile-security-scanner
+git clone https://github.com/Chamathka123456/DroidHunter.git
+cd DroidHunter
 Install Dependencies
 pip install -r requirements.txt
 Optional: Development Environment
@@ -102,11 +105,11 @@ python -m src.scanner app.apk --format html
 
 Build the Docker image:
 
-docker build -t mobile-security-scanner .
+docker build -t droidhunter .
 
 Run scan inside container:
 
-docker run -v $(pwd):/workspace mobile-security-scanner app.apk
+docker run -v $(pwd):/workspace droidhunter app.apk
 🧪 Running Tests
 
 Execute unit tests:
@@ -122,3 +125,25 @@ Unauthorized scanning of applications or systems without permission may violate 
 📄 License
 
 This project is licensed under the MIT License.
+## 🏗️ Architecture
+
+```
+DroidHunter
+│
+├── src/
+│   ├── analyzers/
+│   │   ├── manifest_analyzer.py
+│   │   ├── network_analyzer.py
+│   │   ├── code_analyzer.py
+│   │   ├── crypto_analyzer.py
+│   │   └── file_analyzer.py
+│   │
+│   ├── core/
+│   │   ├── vulnerability.py
+│   │   ├── logger.py
+│   │   └── report_generator.py
+│   │
+│   └── utils/
+│       ├── helpers.py
+│       └── validators.py
+```
