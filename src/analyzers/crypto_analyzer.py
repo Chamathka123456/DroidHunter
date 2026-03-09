@@ -1,0 +1,1 @@
+class CryptoAnalyzer: pass

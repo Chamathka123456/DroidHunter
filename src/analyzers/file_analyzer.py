@@ -1,0 +1,1 @@
+class FileAnalyzer: pass

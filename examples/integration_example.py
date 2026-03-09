@@ -1,0 +1,1 @@
+print('CI integration example')

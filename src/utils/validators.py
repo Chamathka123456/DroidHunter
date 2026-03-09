@@ -1,0 +1,1 @@
+def validate_apk(path): return True
