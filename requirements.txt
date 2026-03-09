@@ -1,0 +1,4 @@
+colorama
+pyyaml
+rich
+jinja2
